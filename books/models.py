@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Book(models.Model):
     class Meta:
         verbose_name = 'Book'
