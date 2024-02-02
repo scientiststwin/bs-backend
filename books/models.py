@@ -6,7 +6,7 @@ class Book(models.Model):
         verbose_name_plural = 'Books'
         get_latest_by = 'created_at'
 
-    title = models.TextField()
+    title = models.CharField(max_length=80)
     author = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
